@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "auteurs",
+  "info": {
+    "name": "Auteurs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Genre": {
+      "type": "string"
+    },
+    "Articles": {
+      "via": "Auteurs",
+      "collection": "articles"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/auteurs",
+      "handler": "auteurs.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/auteurs/count",
+      "handler": "auteurs.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/auteurs/:id",
+      "handler": "auteurs.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/auteurs",
+      "handler": "auteurs.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/auteurs/:id",
+      "handler": "auteurs.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/auteurs/:id",
+      "handler": "auteurs.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
